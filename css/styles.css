@@ -10,30 +10,26 @@ body {
   background-color: #000000;
   border-radius: 0;
   border: 0;
+  padding-bottom: 5px;
 }
-
 .navbar-brand {
-  padding-top: 25px;
-  padding-bottom: 35px;
+  padding-top: 15px;
 }
-
-.navbar-brand h1 { /* page name */
-  text-align: left;
-  font-family: 'Playfair Display Regular';
+.navbar-brand h1 { /* Site Name */
+  font-family: 'Playfair Display Regular';, serif;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-
 }
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-
 
 .container {
 	border: none;
@@ -63,47 +59,64 @@ h2 {
 }
 
 /** Meow inputs **/
+.name {
+  margin-left: 30px;
+  width: 80%;
+  margin-bottom: 20px;
+  color: black;
+}
+
 .new-meows {
   margin-left: 30px;
   height: 50vh;
   width: 80%;
-
 }
 
-::-webkit-input-placeholder {
-  white-space:pre-line;
-  position:relative;
-  top:-7px;
-
+textarea {
+  color: black;
+  font-family: "Didact Gothic";
+  font-size: 1.5em;
 }
 
-/********** Large devices only **********/
-@media (min-width: @screen-lg-min) {
-  #header-nav {
-    padding-bottom: 20px;
-  }
+/** Meow inputs Submit **/
+button {
+  border: black;
+  float: right;
+  margin-right: 100px;
 }
+
+/** Meow outputs Submit **/
+#content2 {
+  font: black;
+}
+
+/********* Large devices only **********/
+  /* @media (min-width: @screen-lg-min) {
+    #header-nav {
+      padding-bottom: 20px;
+    }
+  } */
 
 
 /********** Medium devices only **********/
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+/* @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
   /* Header */
 
-  #header-nav {
+  /* #header-nav {
     padding-bottom: 20px;
   }
   .leftside, .rightside {
     height:100vh;
     width: 50%;
   }
-
+} */
       /* End Home Page */
-}
+
 
 /********** Small devices only **********/
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+/* @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { */
   /* Home Page */
-  #header-nav {
+  /* #header-nav {
     padding-bottom: 20px;
   }
 
@@ -111,14 +124,15 @@ h2 {
     height:100vh;
     width: 50%;
   }
-      /* End Home Page */
 }
+  */
+      /* End Home Page */
 
 /********** Extra small devices only **********/
-@media (max-width: @screen-xs-max) {
+/* @media (max-width: @screen-xs-max) {
   /* Header */
 
-  .navbar-brand h1 { /* Restaurant name */
+  /* .navbar-brand h1 { /* Restaurant name */
+    /* float: left;
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
-  }

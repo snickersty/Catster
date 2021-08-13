@@ -13,38 +13,51 @@
     <![endif]-->
 
     <title> Catster </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS only -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
   </head>
 
 <body>
   <!--Navbar-->
   <nav id="header-nav" class="navbar navbar-default">
     <div class="container">
+      <div class="navbar-header">
         <div class="navbar-brand">
           <a href="index.html"><h1>Catster</h1></a>
-        </div>
-
+        </div><!-- .container -->
+      </div><!-- .navbar-header -->
     </div><!-- .container -->
   </nav>
 
-<h2>Meow to your Furry Friends</h2>
+<h2 id="title">Meow to your Furry Friends</h2>
+
+<h3>
+<div id="content"><br></div>
+</h3>
 
   <div class="row no-gutters">
       <div class="col no-gutters">
         <div class="leftside">
-            <div class="container">
-              <input class="new-meows" type="text" placeholder="meow how can you become invisible?"></input>
-            <section id="new-meows"></section>
-          </div>
+            <div class="container-fluid">
+              <input class="name" type="text" id="name" placeholder="your name"></input>
+              <textarea class="new-meows" type="text" id="new-meows" placeholder="tell meow about your nap pose today"></textarea>
+              <div>
+                <button onclick="pawupload();" id="paw" type="button" >
+                  Paw
+                </button>
+              </div>
         </div>
       </div>
 
       <div class="col no-gutters">
         <div class="rightside">
-            <section id="meows"></section>
-                <p></p>
+          <div class="container-fluid">
+            <div id="content2">
+            </div>
+          </div>
+
         </div>
       </div>
   </div>
