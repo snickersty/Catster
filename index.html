@@ -34,30 +34,33 @@
 <h2 id="title">Meow to your Furry Friends</h2>
 
 <h3>
-<div id="content"><br></div>
+<div id="hello"><br></div>
 </h3>
 
   <div class="row no-gutters">
       <div class="col no-gutters">
         <div class="leftside">
             <div class="container-fluid">
-              <input class="name" type="text" id="name" placeholder="your name"></input>
-              <textarea class="new-meows" type="text" id="new-meows" placeholder="tell meow about your nap pose today"></textarea>
+              <input id="name" class="name" type="text" placeholder="your name"></input>
+              <textarea id="new-meows" class="new-meows" type="text" placeholder="tell meow about your nap pose today"></textarea>
               <div>
                 <button onclick="pawupload();" id="paw" type="button" >
                   Paw
                 </button>
               </div>
+            </div>
+          </div>
         </div>
-      </div>
 
       <div class="col no-gutters">
         <div class="rightside">
           <div class="container-fluid">
-            <div id="content2">
+            <div id="new-display">
+              <br>
+              <div id="display">
+              </div>
             </div>
           </div>
-
         </div>
       </div>
   </div>
@@ -66,5 +69,6 @@
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/message.js"></script>
 </body>
 </html>

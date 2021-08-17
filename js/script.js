@@ -1,28 +1,23 @@
-console.log(document.getElementById("title"));
-console.log(document instanceof HTMLDocument);
 
-// NAME upload //
+// paw button function //
 function pawupload() {
+// NAME upload //
   var name =
     document.getElementById('name').value;
     var welcome = "<h3>Hi " + name.toUpperCase() + ", meowcome!</h3>";
 
-  // document
-  //   .getElementById('content')
-  //   .textContent = message;
+  // Say Hello to User //
   document
-    .getElementById('content')
+    .getElementById('hello')
     .innerHTML = welcome;
 
 
 // Meowsage upload //
   var meowsage =
     document.getElementById('new-meows').value;
-
+// display recent meowsage //
     document
-      .getElementById('content2')
+      .getElementById('new-display')
       .innerHTML = meowsage;
 
-  console.log(document.getElementById("name").value);
-
-  }
+}
